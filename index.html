@@ -9,8 +9,6 @@
 
 <body>
 
-<p>hello</p>
-
 <script>
 console.log("Ackermann function");
 
@@ -21,12 +19,16 @@ function ack(m,n){
  } else if(n==0){
   return ack(m - 1, 1);
  } else {
-  return ack(m - 1, ack(m,n - 1);
+  return ack(m - 1, ack(m,n - 1));
  }
  
 }
 
-ack(0,0);
+for(var i = 0; i < 3; i++){
+ for(var j = 0; j < 3; j++){
+  console.log("Ackermann("+ i + "," + j + ") = " + ack(i,j));
+ }
+}
 
 
 </script>
